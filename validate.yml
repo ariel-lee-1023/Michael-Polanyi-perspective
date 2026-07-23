@@ -1,0 +1,71 @@
+name: Validate skill
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check SKILL.md frontmatter
+        run: |
+          python - <<'PY'
+          import re, sys, pathlib
+          text = pathlib.Path("SKILL.md").read_text(encoding="utf-8")
+          if not text.startswith("---"):
+              sys.exit("SKILL.md is missing YAML frontmatter")
+          end = text.find("\n---", 3)
+          if end == -1:
+              sys.exit("SKILL.md frontmatter is not terminated")
+          front = text[3:end]
+          for field in ("name", "description"):
+              if not re.search(rf"^{field}:", front, flags=re.MULTILINE):
+                  sys.exit(f"SKILL.md frontmatter is missing required field: {field}")
+          body_lines = text[end:].splitlines()
+          print(f"frontmatter OK; body is {len(body_lines)} lines")
+          if len(body_lines) > 500:
+              print("::warning::SKILL.md body exceeds the 500-line guideline")
+          PY
+
+      - name: Check that referenced files exist
+        run: |
+          python - <<'PY'
+          import re, sys, pathlib
+          missing = []
+          for md in pathlib.Path(".").rglob("*.md"):
+              if ".github" in md.parts:
+                  continue
+              text = md.read_text(encoding="utf-8")
+              # backticked paths like `references/frameworks.md`
+              for ref in re.findall(r"`((?:references|scripts|assets)/[\w./-]+\.\w+)`", text):
+                  if not pathlib.Path(ref).exists():
+                      missing.append(f"{md}: {ref}")
+              # markdown links to local files
+              for ref in re.findall(r"\]\(((?!https?:|#)[\w./-]+)\)", text):
+                  if not (md.parent / ref).exists():
+                      missing.append(f"{md}: {ref}")
+          if missing:
+              sys.exit("broken references:\n  " + "\n  ".join(sorted(set(missing))))
+          print("all internal references resolve")
+          PY
+
+      - name: Check required files
+        run: |
+          for f in SKILL.md README.md LICENSE CHANGELOG.md .gitignore; do
+            test -f "$f" || { echo "missing required file: $f"; exit 1; }
+          done
+          echo "required files present"
+
+      - name: Build the .skill bundle
+        run: |
+          python scripts/package_skill.py . -o /tmp/polanyi-perspective.skill
+          python -c "import zipfile; print('\n'.join(zipfile.ZipFile('/tmp/polanyi-perspective.skill').namelist()))"

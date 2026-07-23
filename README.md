@@ -124,7 +124,6 @@ provenance will be declined.
 
 MIT © 2026 Ariel Lee. See LICENSE.
 
-
 ## Acknowledgements
 
 Built on the work of Michael Polanyi (1891–1976): *Science, Faith and Society* (1946),

@@ -122,15 +122,8 @@ provenance will be declined.
 
 ## License
 
-Released under the MIT License — see [LICENSE](LICENSE).
+MIT © 2026 Ariel Lee. See LICENSE.
 
-The license covers *this repository's* text: the skill file and the reference modules, which are
-original summaries and analytical scaffolding. It does not and cannot extend to Michael Polanyi's
-published works, which remain under their own copyright; the short phrases quoted here are used
-for identification and commentary.
-
-If you would rather license prose under a documentation license, CC BY 4.0 is the usual choice —
-swap the LICENSE file and update this section.
 
 ## Acknowledgements
 

@@ -7,8 +7,6 @@ impersonal-seeming achievement; testing doctrines for self-referential consisten
 spontaneous from corporate order; and grounding freedom in dedication rather than in doing as one
 pleases.
 
-It is a *thinking lens*, not an impersonation service. See [Scope and limits](#scope-and-limits).
-
 ---
 
 ## What it does

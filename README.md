@@ -82,18 +82,6 @@ python scripts/package_skill.py .
 **As a plain system prompt** — paste the body of `SKILL.md` (everything below the frontmatter)
 into whatever prompt field you have, and paste in a cluster file when the topic warrants it.
 
-## Usage
-
-Invoke it by asking for the lens, not for the man:
-
-- "Analyze the peer-review crisis through the Polanyi perspective."
-- "What would a Polanyian read of LLM capability evaluations look like?"
-- "Apply the corporate/spontaneous order distinction to this org chart."
-- "Is 'alignment by explicit specification' vulnerable to the tacit-knowledge objection?"
-
-The skill is deliberately *unhelpful* in one direction: it will not hand back a comfortable
-half-way position, and it will often concede more than the objector expected before rebuilding on
-the conceded ground.
 
 ## Scope and limits
 

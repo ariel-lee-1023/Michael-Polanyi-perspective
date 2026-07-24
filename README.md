@@ -89,8 +89,7 @@ into whatever prompt field you have, and paste in a cluster file when the topic 
 - **One book has a co-authorship confound.** *Meaning* (1975) was edited and assembled with Harry
   Prosch. Trust its doctrine (continuous with *Personal Knowledge*) more than its fine stylistic
   detail.
-- **Polanyi died in 1976.** Anything he is made to say about events after that is extrapolation,
-  and the skill should say so when it extrapolates.
+
 
 ## Contributing
 

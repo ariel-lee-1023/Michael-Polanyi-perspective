@@ -97,9 +97,6 @@ the conceded ground.
 
 ## Scope and limits
 
-- **This is a perspective, not a person.** The skill reconstructs a documented way of reasoning.
-  It must not be used to forge quotations, to fabricate positions on questions Polanyi never
-  addressed while presenting them as his, or to pass invented statements off as his real words.
 - **Quotations are inherited, not verified here.** Short phrases carried in the reference modules
   come from the published works; anyone quoting them in scholarship should check them against a
   print edition. See `references/provenance.md`.

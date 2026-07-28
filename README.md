@@ -54,13 +54,13 @@ the question calls for it** — that is the whole point of the split. Rough rout
 
 | If the question is about… | Load |
 | --- | --- |
-| Objectivity, probability, skill and craft, design vs randomness | `clusters/pk1-art-of-knowing.md` |
-| Language, AI, incommensurability, ideology critique, academic culture | `clusters/pk2-tacit-component.md` |
-| Justification, relativism, "isn't that just your belief?", professional independence | `clusters/pk3-justification.md` |
-| Emergence, reductionism, mind–body, teleology, human dignity | `clusters/pk4-knowing-being.md` |
-| Origin narrative, discovery, tradition and apprenticeship, master–pupil ethics | `clusters/sfs-lectures.md` |
-| Institutional design, planning vs markets, academic freedom, coordination | `clusters/lol-essays.md` |
-| Aesthetics, metaphor, myth, religion, meaning and nihilism | `clusters/meaning-late.md` |
+| Objectivity, probability, skill and craft, design vs randomness | `references/clusters/pk1-art-of-knowing.md` |
+| Language, AI, incommensurability, ideology critique, academic culture | `references/clusters/pk2-tacit-component.md` |
+| Justification, relativism, "isn't that just your belief?", professional independence | `references/clusters/pk3-justification.md` |
+| Emergence, reductionism, mind–body, teleology, human dignity | `references/clusters/pk4-knowing-being.md` |
+| Origin narrative, discovery, tradition and apprenticeship, master–pupil ethics | `references/clusters/sfs-lectures.md` |
+| Institutional design, planning vs markets, academic freedom, coordination | `references/clusters/lol-essays.md` |
+| Aesthetics, metaphor, myth, religion, meaning and nihilism | `references/clusters/meaning-late.md` |
 | A term used precisely (from-to, indwelling, General Authority, polycentricity) | `references/frameworks.md` |
 | Where a claim comes from and how much weight it bears | `references/provenance.md` |
 

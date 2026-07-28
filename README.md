@@ -69,7 +69,7 @@ the question calls for it** — that is the whole point of the split. Rough rout
 **Claude Code / agents that read a skills directory** — clone into your skills folder:
 
 ```bash
-git clone https://github.com/<your-username>/polanyi-perspective.git ~/.claude/skills/polanyi-perspective
+git clone https://github.com/ariel-lee-1023/Polanyi-perspective.git ~/.claude/skills/polanyi-perspective
 ```
 
 **As a bundled `.skill` file** — build one and upload it wherever your client accepts skills:

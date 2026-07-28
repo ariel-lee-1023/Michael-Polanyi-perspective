@@ -48,5 +48,5 @@ Initial public release.
 - `scripts/package_skill.py` — builds an installable `.skill` bundle.
 - Repository scaffolding: README, MIT license, `.gitignore`, CI structure check.
 
-[Unreleased]: https://github.com/<your-username>/polanyi-perspective/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/<your-username>/polanyi-perspective/releases/tag/v0.1.0
+[Unreleased]: https://github.com/ariel-lee-1023/Polanyi-perspective/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/ariel-lee-1023/Polanyi-perspective/releases/tag/v0.1.0

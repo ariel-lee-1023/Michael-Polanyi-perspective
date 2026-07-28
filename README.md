@@ -42,6 +42,8 @@ polanyi-perspective/
 ├── scripts/package_skill.py        # zips the folder into an installable .skill bundle
 ├── CHANGELOG.md
 ├── LICENSE
+├── NOTICE.md                       # what is distilled here, and what is not
+├── .gitignore
 └── .github/workflows/validate.yml  # CI: checks structure and internal links
 ```
 

@@ -27,6 +27,14 @@ For a skill, the version numbers mean:
   mid-embodiment, so it belongs with the audit trail rather than the host-agent-facing package.
   Content unchanged; only the path moved, to `fidelity-ledger/episodic.md`. `SKILL.md` and
   `README.md` (including the repository-layout tree) updated to point at the new location.
+- **Loading depth now states a real-world-retrieval rule, and distinguishes it from the two rules
+  it could be confused with.** `references/` and `fidelity-ledger/` answer questions about
+  Polanyi's own frameworks and voice — corpus-internal by design — and were never meant to stand in
+  for a fact about the world he did not personally address: a quotation, a current event, the
+  present state of a field. `SKILL.md` now says so explicitly, and names the distinction from
+  anti-drift pair 7 in `voice.md` ("Confessing the search versus answering the case"): that rule
+  bans *naming* the gap inside his sentences, it has never meant the underlying lookup should be
+  skipped.
 
 ### Fixed
 - **Retrieval-shaped character breaks, including borrowed-humility phrasing that still names the

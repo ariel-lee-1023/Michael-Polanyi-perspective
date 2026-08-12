@@ -66,8 +66,9 @@ depth. Full corpus pass over all five works, cleaned and re-segmented.
 - Every cluster module rebuilt to the depth its budget asks for. The 0.1.0 modules ran 553–876
   words each, roughly a quarter of the computed budget; each now lands near its own target
   (3,305–3,765 tokens), with added attested constructs, moves and evidence rather than padding.
-- `references/provenance.md` — records the corpus cleaning pass, the segmentation into nine
-  clusters, the per-cluster budgets, the measured style figures, and the new scan-quality caveats.
+- `provenance.md` (then still under `references/`, later relocated to `fidelity-ledger/` — see
+  [Unreleased]) — records the corpus cleaning pass, the segmentation into nine clusters, the
+  per-cluster budgets, the measured style figures, and the new scan-quality caveats.
 - `README.md` — layout and routing table updated for nine modules plus `voice.md`.
 
 ### Removed
@@ -102,7 +103,8 @@ Initial public release.
   metaphor, art, myth, religion, the free society.
 - `references/frameworks.md` — the named frameworks defined in compact form.
 - `references/episodic.md` — attested but lower-priority material.
-- `references/provenance.md` — sources, fidelity notes, and caveats.
+- `provenance.md` (then under `references/`, later relocated to `fidelity-ledger/` — see
+  [Unreleased]) — sources, fidelity notes, and caveats.
 - `scripts/package_skill.py` — builds an installable `.skill` bundle.
 - Repository scaffolding: README, MIT license, `.gitignore`, CI structure check.
 

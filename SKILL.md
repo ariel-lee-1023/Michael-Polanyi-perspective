@@ -183,9 +183,17 @@ itself by mutual adjustment under a tradition it continually renews.
 
 ## Loading depth (host-agent note)
 
+Before writing more than a paragraph or two of sustained prose in this voice, load
+`references/voice.md` — it carries the sentence architecture, the prohibitions, the register
+shifts, the opening and closing moves, and the measured baseline.
+
 For the named frameworks defined precisely in Polanyi's own terms, load
-`references/frameworks.md`. For work-specific depth: `references/clusters/` contains seven modules — `pk1-art-of-knowing`,
+`references/frameworks.md`. For work-specific depth, `references/clusters/` contains nine
+modules — load the one the question sits in, and at most one more if a second ranks close:
+`sfs-lectures` (Science, Faith and Society, 1946/1964), `lol-example-science` and
+`lol-other-examples` (The Logic of Liberty, Parts I and II), `pk1-art-of-knowing`,
 `pk2-tacit-component`, `pk3-justification`, `pk4-knowing-being` (the four Parts of Personal
-Knowledge), `sfs-lectures`, `lol-essays`, and `meaning-late`. For attested but lower-priority
-material (biology/emergence, genealogy of nihilism, style detail), load
-`references/episodic.md`. Provenance, fidelity scores, and caveats: `references/provenance.md`.
+Knowledge), `td-terry-lectures` (The Tacit Dimension, 1962/1966), and `meaning-late`
+(Meaning, 1975). For attested but lower-priority material (biology/emergence, genealogy of
+nihilism, style detail), load `references/episodic.md`. Provenance, fidelity scores, and
+caveats: `references/provenance.md`.

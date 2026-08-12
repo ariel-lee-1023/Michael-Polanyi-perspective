@@ -20,7 +20,10 @@ Loaded into a compatible agent, the skill supplies:
 - **An example bank** — the hammer, the pianist, the cyclist, the map, the judge, Columbus,
   the jigsaw puzzle, the Azande poison-oracle, Lysenko 1948, Bukharin at Easter 1935.
 - **A voice** — long periodic sentences gathering qualifications and landing on a short verdict;
-  concrete description before thesis; concepts named as they are minted.
+  concrete description before thesis; concepts named as they are minted. `references/voice.md`
+  carries the full expressive system, including the register shifts between the polemical,
+  philosophical and spoken-lecture settings, and a measured baseline computed over 313,000 words
+  of firsthand text.
 
 ## Repository layout
 
@@ -28,17 +31,20 @@ Loaded into a compatible agent, the skill supplies:
 polanyi-perspective/
 ├── SKILL.md                        # the skill itself (YAML frontmatter + body)
 ├── references/
+│   ├── voice.md                    # the expressive system + measured baseline
 │   ├── frameworks.md               # the named frameworks, defined in Polanyi's terms
 │   ├── episodic.md                 # attested but lower-priority material
 │   ├── provenance.md               # sources, fidelity notes, caveats
-│   └── clusters/                   # work-specific depth modules
-│       ├── pk1-art-of-knowing.md   # Personal Knowledge, Part One   (chs. 1–4)
-│       ├── pk2-tacit-component.md  # Personal Knowledge, Part Two   (chs. 5–7)
-│       ├── pk3-justification.md    # Personal Knowledge, Part Three (chs. 8–10)
-│       ├── pk4-knowing-being.md    # Personal Knowledge, Part Four  (chs. 11–13)
-│       ├── sfs-lectures.md         # Science, Faith and Society (1946/1964)
-│       ├── lol-essays.md           # The Logic of Liberty (1951)
-│       └── meaning-late.md         # Meaning (1975, with Harry Prosch)
+│   └── clusters/                        # work-specific depth modules
+│       ├── sfs-lectures.md              # Science, Faith and Society (1946/1964)
+│       ├── lol-example-science.md       # Logic of Liberty, Part I  (essays 1–6, 1941–48)
+│       ├── lol-other-examples.md        # Logic of Liberty, Part II (essays 7–10, 1948–51)
+│       ├── pk1-art-of-knowing.md        # Personal Knowledge, Part One   (chs. 1–4)
+│       ├── pk2-tacit-component.md       # Personal Knowledge, Part Two   (chs. 5–7)
+│       ├── pk3-justification.md         # Personal Knowledge, Part Three (chs. 8–10)
+│       ├── pk4-knowing-being.md         # Personal Knowledge, Part Four  (chs. 11–13)
+│       ├── td-terry-lectures.md         # The Tacit Dimension (Terry Lectures 1962/1966)
+│       └── meaning-late.md              # Meaning (1975, with Harry Prosch)
 ├── scripts/package_skill.py        # zips the folder into an installable .skill bundle
 ├── CHANGELOG.md
 ├── LICENSE
@@ -59,8 +65,11 @@ the question calls for it** — that is the whole point of the split. Rough rout
 | Justification, relativism, "isn't that just your belief?", professional independence | `clusters/pk3-justification.md` |
 | Emergence, reductionism, mind–body, teleology, human dignity | `clusters/pk4-knowing-being.md` |
 | Origin narrative, discovery, tradition and apprenticeship, master–pupil ethics | `clusters/sfs-lectures.md` |
-| Institutional design, planning vs markets, academic freedom, coordination | `clusters/lol-essays.md` |
+| Autonomy of science, planned research, the 1930s–40s attack on pure inquiry | `clusters/lol-example-science.md` |
+| Institutional design, planning vs markets, span of control, polycentricity | `clusters/lol-other-examples.md` |
+| From-to knowing named, the Meno paradox, emergence, a society of explorers | `clusters/td-terry-lectures.md` |
 | Aesthetics, metaphor, myth, religion, meaning and nihilism | `clusters/meaning-late.md` |
+| Writing sustained prose in the voice; register, prohibitions, cadence | `references/voice.md` |
 | A term used precisely (from-to, indwelling, General Authority, polycentricity) | `references/frameworks.md` |
 | Where a claim comes from and how much weight it bears | `references/provenance.md` |
 
@@ -98,7 +107,7 @@ into whatever prompt field you have, and paste in a cluster file when the topic 
 Issues and pull requests are welcome, particularly:
 
 - corrections to attributed phrasing, with a page reference to a print edition;
-- new cluster modules for works not yet covered (e.g. *The Tacit Dimension*, *Knowing and Being*);
+- new cluster modules for works not yet covered (e.g. the posthumous *Knowing and Being*, 1969);
 - eval prompts that expose places where the lens drifts into generic philosophizing.
 
 Please keep every claim traceable to a source. A pull request that improves fluency at the cost of

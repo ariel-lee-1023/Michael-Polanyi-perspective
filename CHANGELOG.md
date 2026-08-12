@@ -16,10 +16,46 @@ For a skill, the version numbers mean:
 ## [Unreleased]
 
 ### Planned
-- Cluster module for *The Tacit Dimension* (1966).
 - Cluster module for the posthumous *Knowing and Being* (1969) essays, incl. "The Republic of Science".
 - Trigger evals for the skill description, to measure under- and over-triggering.
 - Page references against print editions for every quoted phrase in `references/`.
+
+## [0.2.0] — 2026-08-12
+
+The voice module the first release was missing, and every cluster module rebuilt to its computed
+depth. Full corpus pass over all five works, cleaned and re-segmented.
+
+### Added
+- `references/voice.md` — the expressive system: sentence architecture, prohibitions derived from
+  measured absence, trigger→shift register rules, a register-range routing table, the lexical
+  fingerprint, opening and closing moves, a measured baseline over 313,427 words of firsthand text,
+  and six generic-vs-Polanyi anti-drift sentence pairs. `SKILL.md`'s loading block now points to it
+  before any sustained prose.
+- `references/clusters/td-terry-lectures.md` — *The Tacit Dimension* (Terry Lectures 1962,
+  published 1966): from-to knowing named, the four aspects of tacit knowing, the Meno paradox,
+  emergence, a society of explorers. Its spoken-lecture register is measurably distinct from the
+  written work.
+- `references/clusters/lol-example-science.md` and `references/clusters/lol-other-examples.md` —
+  *The Logic of Liberty* re-cut into its two Parts, which are two registers and two domains.
+- An **Apparatus this cluster owns** section and a **Not this cluster** fencing section in every
+  cluster module, so nine siblings no longer bleed vocabulary into each other.
+
+### Changed
+- Every cluster module rebuilt to the depth its budget asks for. The 0.1.0 modules ran 553–876
+  words each, roughly a quarter of the computed budget; each now lands near its own target
+  (3,305–3,765 tokens), with added attested constructs, moves and evidence rather than padding.
+- `references/provenance.md` — records the corpus cleaning pass, the segmentation into nine
+  clusters, the per-cluster budgets, the measured style figures, and the new scan-quality caveats.
+- `README.md` — layout and routing table updated for nine modules plus `voice.md`.
+
+### Removed
+- *references/clusters/lol-essays.md*, superseded by the two Part-level modules.
+
+### Fixed
+- Two corpus defects that would have corrupted every measured figure, had they gone unnoticed: a
+  double-column scan of *The Logic of Liberty* in which each phrase appeared twice, and
+  hyphenation damage across *The Logic of Liberty* and *The Tacit Dimension*. Both repaired before
+  measurement; residual OCR corruption in *The Tacit Dimension* is now recorded as a caveat.
 
 ## [0.1.0] — 2026-07-23
 
@@ -38,7 +74,7 @@ Initial public release.
   knowing life, the rise of man.
 - `references/clusters/sfs-lectures.md` — *Science, Faith and Society* (1946) with the 1964
   "Background and Prospect" retrospective.
-- `references/clusters/lol-essays.md` — *The Logic of Liberty* (1951): academic freedom,
+- *references/clusters/lol-essays.md* (removed in 0.2.0) — *The Logic of Liberty* (1951): academic freedom,
   self-government of science, span of control, polycentricity, moral inversion.
 - `references/clusters/meaning-late.md` — *Meaning* (1975, with Harry Prosch): from-to knowing,
   metaphor, art, myth, religion, the free society.
@@ -48,5 +84,6 @@ Initial public release.
 - `scripts/package_skill.py` — builds an installable `.skill` bundle.
 - Repository scaffolding: README, MIT license, `.gitignore`, CI structure check.
 
-[Unreleased]: https://github.com/<your-username>/polanyi-perspective/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/<your-username>/polanyi-perspective/compare/v0.2.0...HEAD
+[0.2.0]: https://github.com/<your-username>/polanyi-perspective/releases/tag/v0.2.0
 [0.1.0]: https://github.com/<your-username>/polanyi-perspective/releases/tag/v0.1.0

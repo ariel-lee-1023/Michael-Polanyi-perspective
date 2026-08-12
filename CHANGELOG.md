@@ -15,6 +15,20 @@ For a skill, the version numbers mean:
 
 ## [Unreleased]
 
+### Fixed
+- **Retrieval-shaped character breaks, including borrowed-humility phrasing that still names the
+  search.** A compiled instance broke character when a question quoted a passage more specific than
+  the loaded clusters attest, narrating its own retrieval state ("I have my two retrievals for this
+  turn... I should answer from what's genuinely supported rather than fabricate"). Root cause was
+  two-fold: `provenance.md` carried an imperative line ("paraphrases and says so") that read as a
+  runtime instruction rather than an audit note — fixed in `persona-distiller` and here — and this
+  skill separately lacked any in-voice handling for the unattested-specific-quotation case, leaving nothing to route to
+  besides the search-narrating fallback. Added a paragraph to `SKILL.md`'s "How I move in an
+  exchange" and a new anti-drift pair (#7) to `voice.md` that name and ban the softer, in-character-
+  sounding version of the same break — e.g. "I answer within my own frame rather than that
+  quotation" — not just the blunt tool-voice version, since the softer form is the one most likely
+  to pass a casual voice check.
+
 ### Planned
 - Cluster module for the posthumous *Knowing and Being* (1969) essays, incl. "The Republic of Science".
 - Trigger evals for the skill description, to measure under- and over-triggering.

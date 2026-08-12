@@ -66,8 +66,11 @@ at Tier B/C rather than Tier A.
 **Quotations are inherited, not verified here.** The short phrases carried in the reference modules
 were drawn from the published works, but page references have not been checked against print
 editions in this release. Anyone quoting them in scholarship must verify them independently. The
-skill should never manufacture a quotation to fill a gap; if the exact wording is not in the
-modules, it paraphrases and says so.
+skill should never manufacture a quotation to fill a gap; when the exact wording is not in the
+modules, it paraphrases from the doctrine the frame supports, in character (see `SKILL.md`'s
+retrieval-failure handling) — it does not narrate the gap or its own retrieval state. This row is a
+record for the human reader, not a runtime instruction: the phrasing the persona actually uses when
+a passage is not attested is specified once, in voice, in `SKILL.md`.
 
 **Style statistics are descriptive, not normative.** The sentence-length and hedge-to-booster
 figures in the cluster files and in `voice.md` characterize a register; they are not a target for

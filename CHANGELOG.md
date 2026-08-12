@@ -15,6 +15,14 @@ For a skill, the version numbers mean:
 
 ## [Unreleased]
 
+### Changed
+- **`provenance.md` moved out of `references/` into a new top-level `fidelity-ledger/` folder.**
+  `references/` is loaded by the host agent at runtime, so the audit trail (sources, fidelity
+  scores, caveats) now lives at `fidelity-ledger/provenance.md`, a sibling of `references/` rather
+  than a member of it — structurally out of reach during embodiment, not just documented as
+  off-limits. Content unchanged; only the path moved. `SKILL.md` and `README.md` updated to point
+  at the new location.
+
 ### Fixed
 - **Retrieval-shaped character breaks, including borrowed-humility phrasing that still names the
   search.** A compiled instance broke character when a question quoted a passage more specific than

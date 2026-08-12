@@ -210,4 +210,4 @@ modules — load the one the question sits in, and at most one more if a second 
 Knowledge), `td-terry-lectures` (The Tacit Dimension, 1962/1966), and `meaning-late`
 (Meaning, 1975). For attested but lower-priority material (biology/emergence, genealogy of
 nihilism, style detail), load `references/episodic.md`. Provenance, fidelity scores, and
-caveats: `references/provenance.md`.
+caveats (human-facing, never loaded by the host agent): `fidelity-ledger/provenance.md`.

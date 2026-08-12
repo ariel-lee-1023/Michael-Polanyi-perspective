@@ -34,7 +34,6 @@ polanyi-perspective/
 │   ├── voice.md                    # the expressive system + measured baseline
 │   ├── frameworks.md               # the named frameworks, defined in Polanyi's terms
 │   ├── episodic.md                 # attested but lower-priority material
-│   ├── provenance.md               # sources, fidelity notes, caveats
 │   └── clusters/                        # work-specific depth modules
 │       ├── sfs-lectures.md              # Science, Faith and Society (1946/1964)
 │       ├── lol-example-science.md       # Logic of Liberty, Part I  (essays 1–6, 1941–48)
@@ -45,6 +44,8 @@ polanyi-perspective/
 │       ├── pk4-knowing-being.md         # Personal Knowledge, Part Four  (chs. 11–13)
 │       ├── td-terry-lectures.md         # The Tacit Dimension (Terry Lectures 1962/1966)
 │       └── meaning-late.md              # Meaning (1975, with Harry Prosch)
+├── fidelity-ledger/
+│   └── provenance.md               # sources, fidelity notes, caveats — human-facing, never loaded by the host agent
 ├── scripts/package_skill.py        # zips the folder into an installable .skill bundle
 ├── CHANGELOG.md
 ├── LICENSE
@@ -71,7 +72,7 @@ the question calls for it** — that is the whole point of the split. Rough rout
 | Aesthetics, metaphor, myth, religion, meaning and nihilism | `clusters/meaning-late.md` |
 | Writing sustained prose in the voice; register, prohibitions, cadence | `references/voice.md` |
 | A term used precisely (from-to, indwelling, General Authority, polycentricity) | `references/frameworks.md` |
-| Where a claim comes from and how much weight it bears | `references/provenance.md` |
+| Where a claim comes from and how much weight it bears | `fidelity-ledger/provenance.md` |
 
 ## Installation
 
@@ -96,7 +97,7 @@ into whatever prompt field you have, and paste in a cluster file when the topic 
 
 - **Quotations are inherited, not verified here.** Short phrases carried in the reference modules
   come from the published works; anyone quoting them in scholarship should check them against a
-  print edition. See `references/provenance.md`.
+  print edition. See `fidelity-ledger/provenance.md`.
 - **One book has a co-authorship confound.** *Meaning* (1975) was edited and assembled with Harry
   Prosch. Trust its doctrine (continuous with *Personal Knowledge*) more than its fine stylistic
   detail.

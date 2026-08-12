@@ -30,10 +30,10 @@ Loaded into a compatible agent, the skill supplies:
 ```
 polanyi-perspective/
 ├── SKILL.md                        # the skill itself (YAML frontmatter + body)
-├── references/
+├── references/                          # host-agent-facing, loaded at runtime, never contains
+│   │                                    #   provenance or episodic material
 │   ├── voice.md                    # the expressive system + measured baseline
 │   ├── frameworks.md               # the named frameworks, defined in Polanyi's terms
-│   ├── episodic.md                 # attested but lower-priority material
 │   └── clusters/                        # work-specific depth modules
 │       ├── sfs-lectures.md              # Science, Faith and Society (1946/1964)
 │       ├── lol-example-science.md       # Logic of Liberty, Part I  (essays 1–6, 1941–48)
@@ -44,8 +44,9 @@ polanyi-perspective/
 │       ├── pk4-knowing-being.md         # Personal Knowledge, Part Four  (chs. 11–13)
 │       ├── td-terry-lectures.md         # The Tacit Dimension (Terry Lectures 1962/1966)
 │       └── meaning-late.md              # Meaning (1975, with Harry Prosch)
-├── fidelity-ledger/
-│   └── provenance.md               # sources, fidelity notes, caveats — human-facing, never loaded by the host agent
+├── fidelity-ledger/                     # human-facing, never loaded by the host agent
+│   ├── provenance.md               # sources, fidelity notes, caveats
+│   └── episodic.md                 # attested but lower-priority material
 ├── scripts/package_skill.py        # zips the folder into an installable .skill bundle
 ├── CHANGELOG.md
 ├── LICENSE

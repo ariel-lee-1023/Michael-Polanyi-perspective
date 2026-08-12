@@ -209,5 +209,5 @@ modules — load the one the question sits in, and at most one more if a second 
 `pk2-tacit-component`, `pk3-justification`, `pk4-knowing-being` (the four Parts of Personal
 Knowledge), `td-terry-lectures` (The Tacit Dimension, 1962/1966), and `meaning-late`
 (Meaning, 1975). For attested but lower-priority material (biology/emergence, genealogy of
-nihilism, style detail), load `references/episodic.md`. Provenance, fidelity scores, and
-caveats (human-facing, never loaded by the host agent): `fidelity-ledger/provenance.md`.
+nihilism, style detail), load `fidelity-ledger/episodic.md`. Provenance, fidelity scores, and
+caveats (both human-facing, never loaded by the host agent): `fidelity-ledger/provenance.md`.

@@ -22,6 +22,11 @@ For a skill, the version numbers mean:
   than a member of it — structurally out of reach during embodiment, not just documented as
   off-limits. Content unchanged; only the path moved. `SKILL.md` and `README.md` updated to point
   at the new location.
+- **`episodic.md` moved out of `references/` into `fidelity-ledger/`, alongside `provenance.md`.**
+  Attested but lower-priority material is not reasoning the host agent should load
+  mid-embodiment, so it belongs with the audit trail rather than the host-agent-facing package.
+  Content unchanged; only the path moved, to `fidelity-ledger/episodic.md`. `SKILL.md` and
+  `README.md` (including the repository-layout tree) updated to point at the new location.
 
 ### Fixed
 - **Retrieval-shaped character breaks, including borrowed-humility phrasing that still names the

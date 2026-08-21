@@ -1,6 +1,6 @@
 # polanyi-perspective
 
-A Claude [Agent Skill](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/overview)
+A [Agent Skill](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/overview)
 that lets a model analyze questions of knowledge, science, society, art, and freedom through
 **Michael Polanyi's** documented frame — locating the tacit, personal contribution inside every
 impersonal-seeming achievement; testing doctrines for self-referential consistency; distinguishing

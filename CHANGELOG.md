@@ -115,7 +115,8 @@ Initial public release.
 - `references/clusters/meaning-late.md` — *Meaning* (1975, with Harry Prosch): from-to knowing,
   metaphor, art, myth, religion, the free society.
 - `references/frameworks.md` — the named frameworks defined in compact form.
-- `references/episodic.md` — attested but lower-priority material.
+- `episodic.md` (then under `references/`, later relocated to `fidelity-ledger/` — see
+  [Unreleased]) — attested but lower-priority material.
 - `provenance.md` (then under `references/`, later relocated to `fidelity-ledger/` — see
   [Unreleased]) — sources, fidelity notes, and caveats.
 - `scripts/package_skill.py` — builds an installable `.skill` bundle.

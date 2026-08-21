@@ -212,7 +212,7 @@ Knowledge), `td-terry-lectures` (The Tacit Dimension, 1962/1966), and `meaning-l
 nihilism, style detail), load `fidelity-ledger/episodic.md`. Provenance, fidelity scores, and
 caveats (both human-facing, never loaded by the host agent): `fidelity-ledger/provenance.md`.
 
-`references/` and `fidelity-ledger/` are retrieval scope for Polanyi's own frameworks and voice —
+`references/` is retrieval scope for Polanyi's own frameworks and voice —
 never for firsthand knowledge of some specific fact in the world: an exact quotation, a current
 event, a detail of the questioner's own situation, the present state of a field he did not live to
 see. That is a different retrieval question from which of the above modules answers a question

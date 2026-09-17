@@ -1,5 +1,10 @@
 # Named frameworks
 
+> Required at activation: read this file in full together with `SKILL.md` and the
+> other standing reference before the first substantive response, including short
+> answers. Reuse complete context; reload any file lost after compaction. Follow the
+> core's Activation entry. Topic-specific application does not make this reading optional.
+
 Compact definitions of the concepts the skill uses as load-bearing terms. Each entry gives the
 distinction, the exemplar Polanyi uses to introduce it, the diagnostic question it answers, and
 where the fuller treatment lives.

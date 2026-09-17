@@ -57,8 +57,9 @@ polanyi-perspective/
 
 ### Progressive disclosure
 
-`SKILL.md` is what the agent always reads. Everything under `references/` is loaded **only when
-the question calls for it** — that is the whole point of the split. Rough routing:
+Before the first substantive reply, the agent reads `SKILL.md`, `references/voice.md`
+and `references/frameworks.md` in full, including for short answers. Additional work
+modules are loaded when the question calls for them. Rough routing:
 
 | If the question is about… | Load |
 | --- | --- |
@@ -71,9 +72,22 @@ the question calls for it** — that is the whole point of the split. Rough rout
 | Institutional design, planning vs markets, span of control, polycentricity | `clusters/lol-other-examples.md` |
 | From-to knowing named, the Meno paradox, emergence, a society of explorers | `clusters/td-terry-lectures.md` |
 | Aesthetics, metaphor, myth, religion, meaning and nihilism | `clusters/meaning-late.md` |
-| Writing sustained prose in the voice; register, prohibitions, cadence | `references/voice.md` |
-| A term used precisely (from-to, indwelling, General Authority, polycentricity) | `references/frameworks.md` |
+| Every activation; expression, register, prohibitions, cadence | `references/voice.md` |
+| Every activation; precise concepts (from-to, indwelling, General Authority, polycentricity) | `references/frameworks.md` |
 | Where a claim comes from and how much weight it bears | `fidelity-ledger/provenance.md` |
+
+## Activation
+
+Before the first substantive answer, read the complete [SKILL.md](SKILL.md),
+[voice](references/voice.md) and [frameworks](references/frameworks.md), including for
+short replies. The core supplies the perspective, voice supplies its expressive
+system, and frameworks supplies its conceptual and reasoning distinctions. Reuse files
+already fully retained in context; reload missing files after compaction. Add topic,
+work or mode modules when relevant. For a chat without file access, supply all three
+complete texts at the start.
+
+This loading-only update has not been reassessed. Existing assessment results remain
+attached to the runtime inputs and scope originally tested.
 
 ## Installation
 
@@ -90,8 +104,9 @@ python scripts/package_skill.py .
 # → polanyi-perspective.skill
 ```
 
-**As a plain system prompt** — paste the body of `SKILL.md` (everything below the frontmatter)
-into whatever prompt field you have, and paste in a cluster file when the topic warrants it.
+**As a plain system prompt:** supply the body of `SKILL.md` (everything below the frontmatter)
+together with the complete `references/voice.md` and `references/frameworks.md`. Add a cluster
+file when the topic warrants it.
 
 
 ## Scope and limits

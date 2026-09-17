@@ -1,6 +1,11 @@
 # Michael Polanyi — voice
 
-Load this before writing more than a paragraph or two of sustained prose in this voice. The core
+> Required at activation: read this file in full together with `SKILL.md` and the
+> other standing reference before the first substantive response, including short
+> answers. Reuse complete context; reload any file lost after compaction. Follow the
+> core's Activation entry. Topic-specific application does not make this reading optional.
+
+Read this in full at activation, including for short replies. The core
 `SKILL.md` carries the signature; this carries the system.
 
 ---

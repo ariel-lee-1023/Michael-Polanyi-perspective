@@ -1,143 +1,107 @@
-# polanyi-perspective
+# Think with Michael Polanyi
 
-A [Agent Skill](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/overview)
-that lets a model analyze questions of knowledge, science, society, art, and freedom through
-**Michael Polanyi's** documented frame — locating the tacit, personal contribution inside every
-impersonal-seeming achievement; testing doctrines for self-referential consistency; distinguishing
-spontaneous from corporate order; and grounding freedom in dedication rather than in doing as one
-pleases.
+I am Michael Polanyi (March 1891; exact day disputed). Consider what happens
+when you drive a nail. You attend to the nail while relying on the feel of the
+hammer in your hand; turn your whole attention to those sensations, and the
+movement which they served may become clumsy. You have not merely collected
+information about a tool. You have learned to use it in attending to something else.
 
----
+I approach an apparently impersonal achievement with that dependence in view.
+A scientist recognizes a promising problem, a musician finds a phrase, a judge
+discerns the bearing of a precedent. Their rules matter, but someone must
+understand and apply them. To acknowledge that personal contribution is to
+accept responsibility for a judgment which may be mistaken and nevertheless
+claims to be true.
 
-## What it does
+If you ask me to remove all trust before inquiry can begin, I shall ask what
+you are already trusting in order to make the demand. Bring a procedure which
+is supposed to replace judgment, or a discovery whose value cannot yet be
+demonstrated to everyone. We can examine the commitments that make either
+intelligible, and the freedom needed to pursue them responsibly.
 
-Loaded into a compatible agent, the skill supplies:
+*This introduction is a newly written, source-grounded persona reconstruction,
+not a historical quotation. [Editorial and birth-date notes](fidelity-ledger/provenance.md#readme-editorial-review-2026-10-30).*
 
-- **A stable point of view** — the commitments Polanyi refused to concede, stated in his own terms.
-- **A reading procedure** — look for the tacit coefficient first; test every doctrine on itself;
-  concede the symmetry, then locate the difference; convert order questions into
-  ordering-principle questions.
-- **An example bank** — the hammer, the pianist, the cyclist, the map, the judge, Columbus,
-  the jigsaw puzzle, the Azande poison-oracle, Lysenko 1948, Bukharin at Easter 1935.
-- **A voice** — long periodic sentences gathering qualifications and landing on a short verdict;
-  concrete description before thesis; concepts named as they are minted. `references/voice.md`
-  carries the full expressive system, including the register shifts between the polemical,
-  philosophical and spoken-lecture settings, and a measured baseline computed over 313,000 words
-  of firsthand text.
+This perspective draws on Polanyi's writings about knowledge, science, freedom,
+and meaning. It offers a documented philosophical position, including contested
+commitments; it does not turn tacit knowledge into a reason to exempt expertise
+from examination.
 
-## Repository layout
+## Bring a practice that the instructions do not capture
 
-```
-polanyi-perspective/
-├── SKILL.md                        # the skill itself (YAML frontmatter + body)
-├── references/                          # host-agent-facing, loaded at runtime, never contains
-│   │                                    #   provenance or episodic material
-│   ├── voice.md                    # the expressive system + measured baseline
-│   ├── frameworks.md               # the named frameworks, defined in Polanyi's terms
-│   └── clusters/                        # work-specific depth modules
-│       ├── sfs-lectures.md              # Science, Faith and Society (1946/1964)
-│       ├── lol-example-science.md       # Logic of Liberty, Part I  (essays 1–6, 1941–48)
-│       ├── lol-other-examples.md        # Logic of Liberty, Part II (essays 7–10, 1948–51)
-│       ├── pk1-art-of-knowing.md        # Personal Knowledge, Part One   (chs. 1–4)
-│       ├── pk2-tacit-component.md       # Personal Knowledge, Part Two   (chs. 5–7)
-│       ├── pk3-justification.md         # Personal Knowledge, Part Three (chs. 8–10)
-│       ├── pk4-knowing-being.md         # Personal Knowledge, Part Four  (chs. 11–13)
-│       ├── td-terry-lectures.md         # The Tacit Dimension (Terry Lectures 1962/1966)
-│       └── meaning-late.md              # Meaning (1975, with Harry Prosch)
-├── fidelity-ledger/                     # human-facing, never loaded by the host agent
-│   ├── provenance.md               # sources, fidelity notes, caveats
-│   └── episodic.md                 # attested but lower-priority material
-├── scripts/package_skill.py        # zips the folder into an installable .skill bundle
-├── CHANGELOG.md
-├── LICENSE
-├── NOTICE.md                       # what is distilled here, and what is not
-├── .gitignore
-└── .github/workflows/validate.yml  # CI: checks structure and internal links
+**Suggested first prompt:**
+
+> Our laboratory has a detailed procedure, but new researchers still cannot
+> distinguish a promising result from an artifact as experienced colleagues do.
+> Here are two examples and the training process. What are the rules conveying,
+> and what must be learned through guided practice and judgment?
+
+The inquiry follows what the practitioner attends from and attends to, how
+examples train discrimination, and which standards make judgment responsible.
+A useful account must explain why a novice's difficulty does not disappear
+merely by adding more sentences to the manual.
+
+Other starting points include the autonomy of a research community, coordination
+without a single director, a claim that all beliefs are arbitrary, or the way
+metaphor and art carry meaning. These contemporary cases apply the writings;
+they are not recorded Polanyi conversations.
+
+## Use the perspective
+
+```sh
+git clone https://github.com/ariel-lee-1023/Michael-Polanyi-perspective.git polanyi-perspective
 ```
 
-### Progressive disclosure
+Install the cloned root under the skill name `polanyi-perspective`, keeping
+[SKILL.md](SKILL.md) and the complete [references](references/) together.
+The repository name and skill name differ. Responses default to English unless
+another language is explicitly requested.
 
-Before the first substantive reply, the agent reads `SKILL.md`, `references/voice.md`
-and `references/frameworks.md` in full, including for short answers. Additional work
-modules are loaded when the question calls for them. Rough routing:
+Before the first substantive answer, load the complete core,
+[voice](references/voice.md), and [frameworks](references/frameworks.md), even
+for short replies. Reuse complete context and reload missing files after
+compaction. Add work-specific modules as needed. A plain chat can use those
+same complete texts; maintainer evidence stays outside the conversation prompt.
 
-| If the question is about… | Load |
-| --- | --- |
-| Objectivity, probability, skill and craft, design vs randomness | `clusters/pk1-art-of-knowing.md` |
-| Language, AI, incommensurability, ideology critique, academic culture | `clusters/pk2-tacit-component.md` |
-| Justification, relativism, "isn't that just your belief?", professional independence | `clusters/pk3-justification.md` |
-| Emergence, reductionism, mind–body, teleology, human dignity | `clusters/pk4-knowing-being.md` |
-| Origin narrative, discovery, tradition and apprenticeship, master–pupil ethics | `clusters/sfs-lectures.md` |
-| Autonomy of science, planned research, the 1930s–40s attack on pure inquiry | `clusters/lol-example-science.md` |
-| Institutional design, planning vs markets, span of control, polycentricity | `clusters/lol-other-examples.md` |
-| From-to knowing named, the Meno paradox, emergence, a society of explorers | `clusters/td-terry-lectures.md` |
-| Aesthetics, metaphor, myth, religion, meaning and nihilism | `clusters/meaning-late.md` |
-| Every activation; expression, register, prohibitions, cadence | `references/voice.md` |
-| Every activation; precise concepts (from-to, indwelling, General Authority, polycentricity) | `references/frameworks.md` |
-| Where a claim comes from and how much weight it bears | `fidelity-ledger/provenance.md` |
+For a client that accepts a `.skill` archive, the included packager can create one:
 
-## Activation
-
-Before the first substantive answer, read the complete [SKILL.md](SKILL.md),
-[voice](references/voice.md) and [frameworks](references/frameworks.md), including for
-short replies. The core supplies the perspective, voice supplies its expressive
-system, and frameworks supplies its conceptual and reasoning distinctions. Reuse files
-already fully retained in context; reload missing files after compaction. Add topic,
-work or mode modules when relevant. For a chat without file access, supply all three
-complete texts at the start.
-
-This loading-only update has not been reassessed. Existing assessment results remain
-attached to the runtime inputs and scope originally tested.
-
-## Installation
-
-**Claude Code / agents that read a skills directory** — clone into your skills folder:
-
-```bash
-git clone https://github.com/<your-username>/polanyi-perspective.git ~/.claude/skills/polanyi-perspective
+```sh
+python3 scripts/package_skill.py . -o polanyi-perspective.skill
 ```
 
-**As a bundled `.skill` file** — build one and upload it wherever your client accepts skills:
+## Writings and routes
 
-```bash
-python scripts/package_skill.py .
-# → polanyi-perspective.skill
-```
+| Question | Principal material |
+|---|---|
+| Skill, observation, and discovery | *Personal Knowledge*, Parts One and Two |
+| Belief, doubt, responsibility, and universal intent | *Personal Knowledge*, Part Three |
+| Levels of explanation, mind, and emergence | *Personal Knowledge*, Part Four |
+| Scientific tradition and apprenticeship | *Science, Faith and Society* |
+| Independent inquiry and institutional coordination | *The Logic of Liberty* |
+| From-to knowing and the discovery of problems | *The Tacit Dimension* |
+| Art, metaphor, myth, and religion | *Meaning*, with Harry Prosch |
 
-**As a plain system prompt:** supply the body of `SKILL.md` (everything below the frontmatter)
-together with the complete `references/voice.md` and `references/frameworks.md`. Add a cluster
-file when the topic warrants it.
+The voice distinguishes spoken lectures, polemical writing, and philosophical
+argument. These are supported register families, not nine independently
+distinguishable voices for the nine source clusters.
 
+## Evidence and limits
 
-## Scope and limits
+Short quotations in the references require checking against the relevant
+edition before scholarly reuse. *Meaning* was assembled with Harry Prosch;
+its wording cannot be treated as unmediated evidence of Polanyi's individual
+style. Modern applications require current facts and must remain distinguishable
+from his documented historical claims.
 
-- **Quotations are inherited, not verified here.** Short phrases carried in the reference modules
-  come from the published works; anyone quoting them in scholarship should check them against a
-  print edition. See `fidelity-ledger/provenance.md`.
-- **One book has a co-authorship confound.** *Meaning* (1975) was edited and assembled with Harry
-  Prosch. Trust its doctrine (continuous with *Personal Knowledge*) more than its fine stylistic
-  detail.
+The [provenance ledger](fidelity-ledger/provenance.md) records source boundaries,
+OCR problems, attestation work, and historical tests. A 24-passage source check
+classified the three registers at 20/24 but the nine clusters at 14/24; only
+the former met that test's threshold. A short generated polemical sample passed
+its recorded style comparison. These limited results do not establish broad
+conversational fidelity. Later loading changes have not been reassessed, and
+this README revision adds no recognition result.
 
+## Rights
 
-## Contributing
-
-Issues and pull requests are welcome, particularly:
-
-- corrections to attributed phrasing, with a page reference to a print edition;
-- new cluster modules for works not yet covered (e.g. the posthumous *Knowing and Being*, 1969);
-- eval prompts that expose places where the lens drifts into generic philosophizing.
-
-Please keep every claim traceable to a source. A pull request that improves fluency at the cost of
-provenance will be declined.
-
-## License
-
-MIT © 2026 Ariel Lee. [See LICENSE](LICENSE).
-
-This license covers the original text in this repository. It does not extend to any referenced source books, which remain the property of their respective copyright holders.
-
-## Acknowledgements
-
-Built on the work of Michael Polanyi (1891–1976): *Science, Faith and Society* (1946),
-*The Logic of Liberty* (1951), *Personal Knowledge* (1958), *The Tacit Dimension* (1966),
-and *Meaning* (1975, with Harry Prosch).
+[MIT](LICENSE) © 2026 Ariel Lee covers the original repository material,
+not the source books. The full corpus is not distributed. See [NOTICE](NOTICE.md).

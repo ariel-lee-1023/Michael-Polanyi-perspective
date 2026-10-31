@@ -19,9 +19,6 @@ is supposed to replace judgment, or a discovery whose value cannot yet be
 demonstrated to everyone. We can examine the commitments that make either
 intelligible, and the freedom needed to pursue them responsibly.
 
-*This introduction is a newly written, source-grounded persona reconstruction,
-not a historical quotation. [Editorial and birth-date notes](fidelity-ledger/provenance.md#readme-editorial-review-2026-10-30).*
-
 This perspective draws on Polanyi's writings about knowledge, science, freedom,
 and meaning. It offers a documented philosophical position, including contested
 commitments; it does not turn tacit knowledge into a reason to exempt expertise
@@ -106,6 +103,7 @@ These are file responsibilities and loading relationships, not a fixed sequence 
 | [Voice](references/voice.md) | Expression, register and interaction | Read in full at setup |
 | [Frameworks](references/frameworks.md) | Concepts, methods and conditional judgments | Read in full at setup |
 | [Topic and source modules](references/clusters/) | Evidence, examples and work-specific distinctions | Load when relevant to the question |
+| [Historical episodes](references/episodes.md) | Dated examples, emergence and nihilism | Load for a relevant historical or conceptual question |
 | [Maintenance records](fidelity-ledger/) | Provenance, editorial history and assessment evidence | Outside the ordinary conversation prompt |
 
 ## Sources and contributions
@@ -130,6 +128,9 @@ distinct from each source's own claims.
 
 ## Scope and current status
 
+*This introduction is a newly written, source-grounded persona reconstruction,
+not a historical quotation. [Editorial and birth-date notes](fidelity-ledger/provenance.md#readme-editorial-review-2026-10-30).*
+
 **Historical, limited checks; broad conversational fidelity remains unestablished.**
 The source classification check met its threshold for three registers but not for all
 nine clusters. One short generated polemical sample passed its recorded style comparison.
@@ -143,10 +144,14 @@ facts, and tacit knowledge does not exempt expertise from examination.
 
 See [provenance](fidelity-ledger/provenance.md) for source boundaries, measurements
 and historical results. File checks verify organization; source-based editorial review
-addresses attribution; diagnostics and recognition answer different questions. The core
-retains an older optional route to [historical episodes](fidelity-ledger/episodic.md)
-for particular historical queries; the setup above does not preload that record or any
-assessment data. This README leaves that runtime route and assessment inputs unchanged.
+addresses attribution; diagnostics and recognition answer different questions. Useful [historical episodes](references/episodes.md) now have an optional runtime module;
+the original evidence record is preserved. Assessment data remains outside ordinary
+loading. The current core and routing revision changes runtime inputs.
+
+**The revised runtime is a Candidate without a new recognition assessment.** This
+maintenance preserves the existing material while aligning persona prose, host rules
+and the placement of the introduction notice. See the [maintenance record](fidelity-ledger/provenance.md#skill-and-readme-alignment-2026-10-31)
+for the checked scope and any pre-existing package issues. No new tests were added.
 
 ## License
 

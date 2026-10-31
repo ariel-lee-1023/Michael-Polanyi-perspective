@@ -207,7 +207,7 @@ python scripts/discrimination_test.py score key.json --answers c01 c02 ...
 ## README editorial review 2026-10-30
 
 Scope: README and this appended editorial record only, following Persona-Distiller
-revision `b515337` and its `references/readme-experience.md`. This is an editorial
+revision `b515337` and its [README writing standard](https://github.com/ariel-lee-1023/persona-distiller/blob/b51533728bca2ac1e60303859378eec14e5dacfa/references/readme-experience.md). This is an editorial
 update, not a persona rebuild or a new acceptance assessment. Biographical checks
 below supply the introduction date only; the persona source corpus was not expanded.
 
@@ -240,3 +240,12 @@ documentation pass, not a current package pass. Existing layout/runtime-route
 issues remain outside this README task. Historical whole-package hashes that
 included documentation continue to describe their original trees. Recognition
 calls remain **0**.
+
+## CI reference correction — 2026-10-31
+
+The October README editorial record named an authoring-tool path in inline code,
+which the repository link checker interpreted as a local runtime file. The record
+now links to the exact external tool revision. No runtime, assessment, or validator
+rule changed. Validation uses all four existing workflow steps, including packaging.
+
+The exact workflow frontmatter, local-reference and required-file checks pass; the skill bundle builds successfully.

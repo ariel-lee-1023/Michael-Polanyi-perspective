@@ -249,3 +249,37 @@ now links to the exact external tool revision. No runtime, assessment, or valida
 rule changed. Validation uses all four existing workflow steps, including packaging.
 
 The exact workflow frontmatter, local-reference and required-file checks pass; the skill bundle builds successfully.
+
+
+## README reading-order review — 2026-10-31
+
+This is a documentation-only review under Persona Distiller's complete README
+authoring rules. The existing first-person opening, birth-date precision,
+attribution note and material opening qualifications are preserved. Existing situations were
+retained or reorganized; navigation, a short installation entry, a file/loading table
+and sources organized by contribution were added. Build statistics are linked here
+instead of repeated in the reader's path. No conversation excerpts or sample answers
+were added. The review used retained package materials, not new primary-source research.
+
+Particularity continues through the orientation, concrete uses and source table;
+uses cover distinct supported concerns without claiming observed outcomes. Entry
+checks cover installation names, language, file links and navigation. Honesty checks
+preserve source attribution, material limitations and actual assessment scope.
+
+The runtime and historical assessments are unchanged; zero recognition calls were
+made. The core retains a conditional route to fidelity-ledger/episodic.md for historical
+queries. This pre-existing routing difference is recorded separately, not silently
+repaired or presented as full compliance with the current runtime-separation standard.
+
+
+### Completed checks for this README revision
+
+The nail-driving opening is continued through laboratory apprenticeship, scientific autonomy, institutional coordination and artistic meaning. The source table traces personal judgment and responsibility while retaining Harry Prosch’s contribution to Meaning.
+
+The review used a prepared tree based on committed baseline c5487ad1, excluding unrelated working-directory changes. All 31 README local links, including six navigation anchors in body order, resolve. The invocation name agrees with the existing frontmatter. Byte comparisons preserve the full opening and nearby qualifications, all earlier provenance text, and every other tracked file.
+
+Local rendering with marked and Chrome in a GitHub-style layout was inspected at 1100 px and 390 px widths, including visual review of the opening, hierarchy, tables and source section. Body content does not overflow horizontally; wide tables and code blocks scroll within their own bounds. All six rendered navigation targets exist. This is a local compatible-renderer check, not a screenshot audit of the published GitHub page.
+
+The current generic Persona Distiller package check reports FAIL both before and after, with existing findings C1, C1b, C2, C6, L2, S1, S2, S3, S4, S9. A comparison of individual findings adds no failure. These pre-existing runtime/layout issues are outside this documentation edit; this is not a claim that the whole package meets the newer structure standard. The generic validator is from Persona Distiller commit 3774ccc. Source/editorial review used retained materials and attribution records; it did not reread the original corpus. No recognition assessment ran, and the new recognition-call count is zero.
+
+The repository workflow’s frontmatter, internal-reference and required-file checks also pass. Its package_skill.py builds the installable archive successfully in temporary storage; the archive is not added to the repository.
